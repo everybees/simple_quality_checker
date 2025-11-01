@@ -169,6 +169,7 @@ Return **only** the requirements that have *major issues (🟥)* requiring rewri
     "rewrite_suggestion": "The report must quantify adoption rates and AI literacy metrics for five regions (NA, EMEA, APAC, LATAM, MEA) and four industries (Finance, Manufacturing, Healthcare, Energy) for 2030 and 2040, each with ±10–15% variance bands."
   }
 ]
+```
 
 
 ⸻
@@ -222,11 +223,15 @@ Writing Guidelines
 
 ⸻
 
-Example Output
+Output Format (JSON only)
 
-Research Topic: “Are Retail Media Networks delivering better returns than social, display, and search advertising?”
+Return a single JSON object with the following shape:
 
-Summary:
-The key themes of this scenario involved creating a data-based framework to evaluate Retail Media Network performance compared with other digital channels. The rubric emphasizes quantitative accuracy, requiring verified figures for market size, spend, and cost structures. It also focuses on analytical depth, asking evaluators to connect metrics like incrementality and attribution quality to real business outcomes. Writing and organization standards ensure clarity and professionalism, while penalties discourage unsupported claims or irrelevant content. Overall, the rubric is designed to combine measurable evidence, clear reasoning, and structured reporting to evaluate advertising performance consistently.
-
+```json
+{
+"research_topi": "Are Retail Media Networks delivering better returns than social, display, and search advertising?",
+"rubric_explnation": "The key themes of this scenario involved creating a data-based framework to evaluate Retail Media Network performance compared with other digital channels. The rubric emphasizes quantitative accuracy, requiring verified figures for market size, spend, and cost structures. It also focuses on analytical depth, asking evaluators to connect metrics like incrementality and attribution quality to real business outcomes. Writing and organization standards ensure clarity and professionalism, while penalties discourage unsupported claims or irrelevant content. Overall, the rubric is designed to combine measurable evidence, clear reasoning, and structured reporting to evaluate advertising performance consistently."
+}
+  
+```
 """
